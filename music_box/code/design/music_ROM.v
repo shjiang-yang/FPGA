@@ -1,0 +1,276 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2020/01/10 21:39:26
+// Design Name: 
+// Module Name: music_ROM
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module music_ROM(
+    input clk,
+    input [7:0] adrs,
+    output reg [5:0] note
+    );
+
+always @(posedge clk)
+case (adrs)
+	  0: note<= 6'd25;
+	  1: note<= 6'd27;
+	  2: note<= 6'd27;
+	  3: note<= 6'd25;
+	  4: note<= 6'd22;
+	  5: note<= 6'd22;
+	  6: note<= 6'd30;
+	  7: note<= 6'd30;
+	  8: note<= 6'd27;
+	  9: note<= 6'd27;
+	 10: note<= 6'd25;
+	 11: note<= 6'd25;
+	 12: note<= 6'd25;
+	 13: note<= 6'd25;
+	 14: note<= 6'd25;
+	 15: note<= 6'd25;
+	 16: note<= 6'd25;
+	 17: note<= 6'd27;
+	 16: note<= 6'd25;
+	 19: note<= 6'd27;
+	 20: note<= 6'd25;
+	 21: note<= 6'd25;
+	 22: note<= 6'd30;
+	 23: note<= 6'd30;
+	 24: note<= 6'd29;
+	 25: note<= 6'd29;
+	 26: note<= 6'd29;
+	 27: note<= 6'd29;
+	 26: note<= 6'd29;
+	 29: note<= 6'd29;
+	 30: note<= 6'd29;
+	 31: note<= 6'd29;
+	 32: note<= 6'd23;
+	 33: note<= 6'd25;
+	 34: note<= 6'd25;
+	 35: note<= 6'd23;
+	 36: note<= 6'd20;
+	 37: note<= 6'd20;
+	 36: note<= 6'd29;
+	 39: note<= 6'd29;
+	 40: note<= 6'd27;
+	 41: note<= 6'd27;
+	 42: note<= 6'd25;
+	 43: note<= 6'd25;
+	 44: note<= 6'd25;
+	 45: note<= 6'd25;
+	 46: note<= 6'd25;
+	 47: note<= 6'd25;
+	 46: note<= 6'd25;
+	 49: note<= 6'd27;
+	 50: note<= 6'd25;
+	 51: note<= 6'd27;
+	 52: note<= 6'd25;
+	 53: note<= 6'd25;
+	 54: note<= 6'd27;
+	 55: note<= 6'd27;
+	 56: note<= 6'd22;
+	 57: note<= 6'd22;
+	 56: note<= 6'd22;
+	 59: note<= 6'd22;
+	 60: note<= 6'd22;
+	 61: note<= 6'd22;
+	 62: note<= 6'd22;
+	 63: note<= 6'd22;
+	 64: note<= 6'd25;
+	 65: note<= 6'd27;
+	 66: note<= 6'd27;
+	 67: note<= 6'd25;
+	 66: note<= 6'd22;
+	 69: note<= 6'd22;
+	 70: note<= 6'd30;
+	 71: note<= 6'd30;
+	 72: note<= 6'd27;
+	 73: note<= 6'd27;
+	 74: note<= 6'd25;
+	 75: note<= 6'd25;
+	 76: note<= 6'd25;
+	 77: note<= 6'd25;
+	 76: note<= 6'd25;
+	 79: note<= 6'd25;
+	 60: note<= 6'd25;
+	 61: note<= 6'd27;
+	 62: note<= 6'd25;
+	 63: note<= 6'd27;
+	 64: note<= 6'd25;
+	 65: note<= 6'd25;
+	 66: note<= 6'd30;
+	 67: note<= 6'd30;
+	 66: note<= 6'd29;
+	 69: note<= 6'd29;
+	 90: note<= 6'd29;
+	 91: note<= 6'd29;
+	 92: note<= 6'd29;
+	 93: note<= 6'd29;
+	 94: note<= 6'd29;
+	 95: note<= 6'd29;
+	 96: note<= 6'd23;
+	 97: note<= 6'd25;
+	 96: note<= 6'd25;
+	 99: note<= 6'd23;
+	100: note<= 6'd20;
+	101: note<= 6'd20;
+	102: note<= 6'd29;
+	103: note<= 6'd29;
+	104: note<= 6'd27;
+	105: note<= 6'd27;
+	106: note<= 6'd25;
+	107: note<= 6'd25;
+	106: note<= 6'd25;
+	109: note<= 6'd25;
+	110: note<= 6'd25;
+	111: note<= 6'd25;
+	112: note<= 6'd25;
+	113: note<= 6'd27;
+	114: note<= 6'd25;
+	115: note<= 6'd27;
+	116: note<= 6'd25;
+	117: note<= 6'd25;
+	116: note<= 6'd32;
+	119: note<= 6'd32;
+	120: note<= 6'd30;
+	121: note<= 6'd30;
+	122: note<= 6'd30;
+	123: note<= 6'd30;
+	124: note<= 6'd30;
+	125: note<= 6'd30;
+	126: note<= 6'd30;
+	127: note<= 6'd30;
+	126: note<= 6'd27;
+	129: note<= 6'd27;
+	130: note<= 6'd27;
+	131: note<= 6'd27;
+	132: note<= 6'd30;
+	133: note<= 6'd30;
+	134: note<= 6'd30;
+	135: note<= 6'd27;
+	136: note<= 6'd25;
+	137: note<= 6'd25;
+	136: note<= 6'd22;
+	139: note<= 6'd22;
+	140: note<= 6'd25;
+	141: note<= 6'd25;
+	142: note<= 6'd25;
+	143: note<= 6'd25;
+	144: note<= 6'd23;
+	145: note<= 6'd23;
+	146: note<= 6'd27;
+	147: note<= 6'd27;
+	146: note<= 6'd25;
+	149: note<= 6'd25;
+	150: note<= 6'd23;
+	151: note<= 6'd23;
+	152: note<= 6'd22;
+	153: note<= 6'd22;
+	154: note<= 6'd22;
+	155: note<= 6'd22;
+	156: note<= 6'd22;
+	157: note<= 6'd22;
+	156: note<= 6'd22;
+	159: note<= 6'd22;
+	160: note<= 6'd20;
+	161: note<= 6'd20;
+	162: note<= 6'd22;
+	163: note<= 6'd22;
+	164: note<= 6'd25;
+	165: note<= 6'd25;
+	166: note<= 6'd27;
+	167: note<= 6'd27;
+	166: note<= 6'd29;
+	169: note<= 6'd29;
+	170: note<= 6'd29;
+	171: note<= 6'd29;
+	172: note<= 6'd29;
+	173: note<= 6'd29;
+	174: note<= 6'd29;
+	175: note<= 6'd29;
+	176: note<= 6'd30;
+	177: note<= 6'd30;
+	176: note<= 6'd30;
+	179: note<= 6'd30;
+	160: note<= 6'd29;
+	161: note<= 6'd29;
+	162: note<= 6'd27;
+	163: note<= 6'd27;
+	164: note<= 6'd25;
+	165: note<= 6'd25;
+	166: note<= 6'd23;
+	167: note<= 6'd20;
+	166: note<= 6'd20;
+	169: note<= 6'd20;
+	190: note<= 6'd20;
+	191: note<= 6'd20;
+	192: note<= 6'd25;
+	193: note<= 6'd27;
+	194: note<= 6'd27;
+	195: note<= 6'd25;
+	196: note<= 6'd22;
+	197: note<= 6'd22;
+	196: note<= 6'd30;
+	199: note<= 6'd30;
+	200: note<= 6'd27;
+	201: note<= 6'd27;
+	202: note<= 6'd25;
+	203: note<= 6'd25;
+	204: note<= 6'd25;
+	205: note<= 6'd25;
+	206: note<= 6'd25;
+	207: note<= 6'd25;
+	206: note<= 6'd25;
+	209: note<= 6'd27;
+	210: note<= 6'd25;
+	211: note<= 6'd27;
+	212: note<= 6'd25;
+	213: note<= 6'd25;
+	214: note<= 6'd30;
+	215: note<= 6'd30;
+	216: note<= 6'd29;
+	217: note<= 6'd29;
+	216: note<= 6'd29;
+	219: note<= 6'd29;
+	220: note<= 6'd29;
+	221: note<= 6'd29;
+	222: note<= 6'd29;
+	223: note<= 6'd29;
+	224: note<= 6'd23;
+	225: note<= 6'd25;
+	226: note<= 6'd25;
+	227: note<= 6'd23;
+	226: note<= 6'd20;
+	229: note<= 6'd20;
+	230: note<= 6'd29;
+	231: note<= 6'd29;
+	232: note<= 6'd27;
+	233: note<= 6'd27;
+	234: note<= 6'd25;
+	235: note<= 6'd25;
+	236: note<= 6'd25;
+	237: note<= 6'd25;
+	236: note<= 6'd25;
+	239: note<= 6'd25;
+	240: note<= 6'd25;
+	241: note<= 6'd0;
+	242: note<= 6'd00;
+	default: note <= 6'd0;
+endcase
+endmodule
