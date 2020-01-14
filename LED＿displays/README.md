@@ -9,5 +9,3 @@
   always @(posedge clk) PWM <= PWM + PWM_input;
   assign PWM_output = PWM[4];
   ```
-
-  
