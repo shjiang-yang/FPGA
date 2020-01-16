@@ -3,5 +3,6 @@
 
 1. [music_box](./music_box/)  
 2. [LED_displays](./LED_displays/)  
-3. [quadrature_decoder](./Quadrature_decoder/)
+3. [quadrature_decoder](./Quadrature_decoder/)  
+4. [PWM](./PWM/)  
 
